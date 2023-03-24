@@ -1,18 +1,20 @@
 package factory;
 
 public class Airplane extends Vehicle{
+
+    private String brandName;
     @Override
     public String build() {
-        return null;
+        return this.brandName + "built an airplane";
     }
 
     @Override
     public String repair() {
-        return null;
+        return this.brandName + "repaired an airplane";
     }
 
     @Override
     public String restore() {
-        return null;
+        return this.brandName + "restored an airplane";
     }
 }
