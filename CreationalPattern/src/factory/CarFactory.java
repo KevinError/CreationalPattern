@@ -8,7 +8,7 @@ public class CarFactory implements VehicleAbstractFactory{
     }
     @Override
     public Vehicle createVehicle() {
-        return null;
+        return new Car(brandName);
     }
 
     @Override

@@ -8,7 +8,7 @@ public class AirplaneFactory implements VehicleAbstractFactory{
     }
     @Override
     public Vehicle createVehicle() {
-        return null;
+        return new Airplane(brandName);
     }
 
     @Override
