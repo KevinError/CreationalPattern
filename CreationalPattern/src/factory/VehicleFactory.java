@@ -9,7 +9,7 @@ public class VehicleFactory {
     public static VehicleFactory getInstance(){
         return instance;
     }
-    public Vehicle getVehicle(VehicleAbstractFactory vehicle) {
-        return vehicle.createVehicle();
+    public Factory getFactory(VehicleAbstractFactory factoryMaker) {
+        return factoryMaker.createFactory();
     }
 }

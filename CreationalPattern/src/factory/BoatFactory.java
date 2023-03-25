@@ -1,24 +1,24 @@
 package factory;
 
-public class CarFactory extends Factory{
+public class BoatFactory extends Factory{
     private String brandName;
 
-    public CarFactory(String brandName){
+    public BoatFactory(String brandName) {
         this.brandName = brandName;
     }
 
     @Override
     public String build() {
-        return this.brandName + " built a car";
+        return brandName + " built a boat";
     }
 
     @Override
     public String repair() {
-        return this.brandName + " repaired a car";
+        return brandName + " repaired a boat";
     }
 
     @Override
     public String restore() {
-        return this.brandName + " restored a car";
+        return brandName + " restored a boat";
     }
 }
